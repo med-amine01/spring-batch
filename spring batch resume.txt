@@ -1,0 +1,14 @@
+# job launcher : 
+	- is an interface use launch spring batch jobs (entrypoint to init any job) and with run methode will trigger first 1-job then 2-job repository
+
+# job : 
+	- it's the process which contains 1..* steps
+
+# job repository : 
+	- persisting information about your batch jobs and save every job state (eg : restart) it's like monitoring and logging states
+
+# step : (1..* items)
+	- combination of 3 components : 
+		1- item reader : read data from source (eg: csv, files ...)
+		2- item processor : perform operations between reading and writing
+		3- item writer : write data to destination (eg: database ...)
